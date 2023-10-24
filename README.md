@@ -12,14 +12,8 @@
     <title>Fernando</title>
 </head>
  
-<!-- Body Section content -->
+
 <body>
- 
-    <!-- Used to display heading content -->
-    <h1>Welcome to GeeksforGeeks</h1>
- 
-    <!-- Used to display paragrapg content -->
-    <p>A computer science portal for geeks</p>
-</body>
+ cristiano is goat
  
 </html>
