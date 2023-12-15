@@ -1,318 +1,182 @@
-</* Imported some fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Secular+One#standard-styles");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Licorice");
-@import url("https://fonts.googleapis.com/css?family=Kalam");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
++<!doctype html>
+<html lang="en">
 
-/* General Property to be applied to every page*/
-*{
-    padding: 0;
-    margin: 0;
-    font-family:sans-serif;
-    box-sizing: border-box;
-    overflow:auto;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* HOMEPAGE STARTS HERE */
-.hero{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/black-white-background.jpg);
-    background-size: cover;
-    background-position: center;
-}
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-/* Navigation bar */
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 3%;
-    padding-right: 3%;
-    position: fixed;
-    z-index: 9999;
-    background-color: whitesmoke;
-    width: 100%;
-}
+    <title>pinky finger</title>
 
-/* Customized fonts for word "Portfolio" */
-.logo{
-    color: black;
-    font-size: 40px;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-}
-span{
-    color:rgb(255, 81, 0)
-}
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-/* Navigation Style */
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-/* Linked Pages */
-nav ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: large;
-    text-transform: capitalize;
-}
-.qwe{
-  color: white;
-}
-/* On Hover Effect*/
-nav ul li a:hover{
-    color: rgb(255, 81, 0);
-    transition: .4s;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
 
-/* Content for Homepage */
-.content{
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    transform: translateY(-50%);
-}
-h1{
-    color: rgb(0, 0, 0);
-    margin: 20px 0px 20px;
-    font-size: 75px;
-}
-h3{
-    font-family:sans-serif;
-    color:black;
-    font-size: 25px;
-    margin-bottom: 50px;
-}
-h4{
-    font-family:sans-serif;
-    color:black;
-    letter-spacing: 2px;
-    font-size: 20px;
-}
+    <link href="css/style.css" rel="stylesheet">
 
-.newsletter form{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-.newsletter form input:first-child{
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid rgb(255, 81, 0);
-    outline: none;
-    border-radius: 30px;
-}
-.newsletter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: rgb(255, 81, 0);
-    color: white;
-    box-shadow: 0px 0px 5px rgb(199, 0, 0), 0px 0px 15px #03ff74;
-    top: 6.24px;
-    right: 6px;
-}
+</head>
 
-/* ABOUT PAGE STARTS HERE */
-.about{
-    width: 100%;
-    padding: 100px 0px;
-    background-color: #299bf8;
-}
-.about img{
-    height: auto;
-    width: 500px;
-}
-.about-text{
-    color: rgb(0, 0, 0);
-    width: 430px;
-}
-.about-text h2{
-    font-family:sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-.about-text h5{
-    color: rgb(0, 0, 0);
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-}
-.about-text p{
-    font-family:sans-serif;
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-}
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+<body>
 
-button{
-    background-color: rgb(255, 81, 0);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: 0.4s;
-}
-button:hover{
-    background-color: transparent;
-    border: 2px solid rgb(255, 81, 0);
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 3%;
-  transform: translateY(-50%);
-}
-  
-.about{
-    width: 100%;
-    padding: 100px 0px;
-    background-color: grey;
-}
-.about img{
-    height: auto;
-    width: 500px;
-}
-.about-text{
-    color: rgb(0, 0, 0);
-    width: 430px;
-}
-.about-text h2{
-    font-family:sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-.about-text h5{
-    color: rgb(0, 0, 0);
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-}
-.about-text p{
-    font-family:sans-serif;
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;} 
-    
+    <main>
 
-    /* skills STARTS HERE*/
-.skills{
-  width: 100%;
-  padding: 30px 0px;
-  padding-top: 100px;
-  background-color: #73bfdd;
-}
-.title h1{
-  color: rgb(0, 0, 0);
-  font-family: sans-serif;
-  font-size: 75px;
-  width: 1130px;
-  margin: 30px auto;
-  text-align: center;
-}
-.box1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 250px;
-}
-.card1{
-  height: 200px;
-  width: 335px;
-  padding: 20px 35px;
-  background: #191919;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-.card1 h5{
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-.desc h4{
-  color: rgb(179, 115, 118);
-  font-family: sans-serif;
-  font-size: 10px;
-  line-height: 17px;
-  margin-bottom: 10px;
+        
 
-}
-.desc h3{
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  line-height: 17px;
-  margin-bottom: 15px;
-}
-.desc .button{
-  background-color: rgb(255, 81, 0);
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 5px 22px;
-  border-radius: 30px;
-  transition: 0.4s;
-}
-.desc .button:hover{
-  background-color: transparent;
-  border: 2px solid rgb(255, 81, 0);
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-}
-.box2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-}
- .card2{
-  height: 200px;
-  width: 650px !important;
-  padding: 20px 35px;
-  background: none;
- 
-  margin: 15px;
-  position:absolute;
-  overflow: hidden;
-  text-align: center;
-}
+
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Port<span>folio</span></h2>
+                <ul>
+                    <li><a  href="#">HOME</a>
+                    </li>
+
+                    <li><a href="#about">ABOUT ME</a>
+                    </li>
+
+                    <li><a  href="#portfolio">MY PROJECTS</a>
+                    </li>
+
+                    <li><a href="#Skills">MY SKILLS</a>
+                    </li>
+                    <li><a href="#hobby">MY HOBBIES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Content for Homepage -->
+            <div class="content">
+                <h4>Hello, My name is</h4>
+                <h1>Pradeep <span>Abishan</span> Fernando</h1>
+                <h3>I am a Software engineering student</h3>
+                
+                <!-- Subscribe to Newsletter -->
+                
+            </div>
+        </div>
+        <section class="about" id="about">
+            <div class="main">
+                <img src="img/my pic.jpg">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>software engineering  <span>student</span></h5>
+                    <p>Hello! I'm Pradeep Abishan Fernando, a passionate 19-year-old pursuing a BSc in Computer Science at the University of South Wales. My journey in the field of computing has been an exciting exploration of various programming languages.
+
+                        In my academic pursuits, I've delved into the world of computing languages, gaining proficiency in Java, mastering the basics of Python, and developing a strong foundation in C++. These languages serve as tools that empower me to bring ideas to life, solve complex problems, and contribute to the ever-evolving landscape of technology.</p>
+                        
+                </div>
+            </div>
+        </section>
+        <div class="skills" id="Skills">
+            <div class="title">
+                <h1>My Skills</h1>
+            </div>
+
+            <div class="box1">
+                <div class="card1">
+                    <h5>HTML</h5>
+                    <div class="desc">
+                        <img src="img/html.png"width="100px" alt="">
+                      
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <h5>CSS</h5>
+                    <div class="desc">
+                        <img src="img/css-3.png"width="100px" alt="">
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <h5>JavaScript</h5>
+                    <div class="desc">
+                        <img src="img/js.png"width="100px" alt="">
+                    </div>
+                </div>
+                <div class="card1">
+                    <h5>python</h5>
+                    <div class="desc">
+                        <img src="img/python.png"width="100px" alt="">
+                    </div>
+                </div>
+                <div class="card1">
+                    <h5>Java</h5>
+                    <div class="desc">
+                        <img src="img/java.png"width="100px" alt="">
+                    </div>
+                </div>
+                <div class="card1">
+                    <h5>C++</h5>
+                    <div class="desc">
+                        <img src="img/c-.png"width="100px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills" id="portfolio">
+            <div class="title">
+                <h1>My projects</h1>
+            </div>
+
+            <div class="box2">
+                <div class="card2">
+                    <h1 class="qwe" >no projects yet</h1>
+                    
+                </div>
+             </div>
+        </div>
+        
+        <div class="skills" id="hobby">
+            <div class="title">
+                <h1>My HOBBIES</h1>
+            </div>
+
+            <div class="box1">
+                <div class="card1">
+                    <h5>reading</h5>
+                    <div class="desc">
+                        <img src="img/reading.png"width="100px" alt="">
+                      
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <h5>coding</h5>
+                    <div class="desc">
+                        <img src="img/front-end.png"width="100px" alt="">
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <h5>exercise</h5>
+                    <div class="desc">
+                        <img src="img/exercise-icon-png-60.png"width="100px" alt="">
+                    </div>
+                </div>
+                <div class="card1">
+                    <h5>researching</h5>
+                    <div class="desc">
+                        <img src="img/R.png"width="100px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
